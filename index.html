@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="feedbackForm">
+      <h2>We Value Your Feedback</h2>
+      <div class="input-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="rating">Rate Us</label>
+        <div class="stars">
+          <span data-value="5">&#9733;</span>
+          <span data-value="4">&#9733;</span>
+          <span data-value="3">&#9733;</span>
+          <span data-value="2">&#9733;</span>
+          <span data-value="1">&#9733;</span>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="message">Your Feedback</label>
+        <textarea id="message" name="message" rows="4" placeholder="Share your thoughts..." required></textarea>
+      </div>
+
+      <button type="submit">Submit Feedback</button>
+      <p id="success-msg" class="hidden">✅ Thank you! Your feedback has been submitted.</p>
+    </form>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
